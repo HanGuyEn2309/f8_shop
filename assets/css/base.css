@@ -37,10 +37,22 @@ html {
     width: 16.66667%;
 }
 
+.grid__column-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
 .grid__column-2-4 {
     padding-left: 5px;
     padding-right: 5px;
     width: 20%;
+}
+
+.grid__column-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
 }
 
 .grid__column-10 {
@@ -240,48 +252,7 @@ html {
     border-radius: 2px;
 }
 
-.footer__heading {
-    margin: 40px 0 20px;
-    color: #0000008a;
-}
-
-.footer-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.footer-item {
-    margin-bottom: 12px;
-}
-
-.footer-link {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #0000008a;
-}
-
-.footer-link:hover {
-    color: var(--primary-color);
-}
-
-.footer__pay-list {
-    list-style-type: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -8px;
-    max-width: 190px;
-}
-
-.footer__pay-item {
-    width: calc(33.33333% - 8px);
-    margin-right: 8px;
-    margin-bottom: 8px;
-    height: 29px;
-    display: flex;
-    align-items: center;
-}
-
+/* Footer */
 .footer-vn-background {
     background-image: url(../img/footer/footer.png);
 }
@@ -334,5 +305,80 @@ html {
     background-size: 742% 1131.578947368421%;
     background-position: 73.3644859813084% 24.489795918367346%;
 }
-/* change code */
-/* Code của Đức  */
+
+.footer-vn-shopee-express-png {
+    width: 55px;
+    height: 10px;
+    background-size: 668.4684684684685% 1194.4444444444443%;
+    background-position: 70.04754358161648% 5.0761421319796955%;
+}
+
+.footer-vn-ghtk-png {
+    width: 55px;
+    height: 18px;
+    background-size: 1349.090909090909% 1194.4444444444443%;
+    background-position: 19.941775836972344% 41.6243654822335%;
+}
+
+.footer-vn-ghn-png {
+    width: 55px;
+    height: 29px;
+    background-size: 1349.090909090909% 741.3793103448276%;
+    background-position: 9.024745269286754% 44.086021505376344%;
+}
+
+.footer-vn-viettel_post-png {
+    width: 55px;
+    height: 40px;
+    background-size: 579.6875% 167.96875%;
+    background-position: 76.71009771986971% 100%;
+}
+
+.footer-vn-vnpost-png {
+    width: 55px;
+    height: 27px;
+    background-size: 1349.090909090909% 796.2962962962963%;
+    background-position: 56.914119359534205% 55.851063829787236%;
+}
+
+.footer-vn-vn_jnt_footer-png {
+    width: 55px;
+    height: 16px;
+    background-size: 1349.090909090909% 1343.75%;
+    background-position: 94.32314410480349% 5.025125628140704%;
+}
+
+.footer-vn-grab_express-png {
+    width: 55px;
+    height: 15px;
+    background-size: 553.7313432835821% 741.3793103448276%;
+    background-position: 35.0328947368421% 5.376344086021505%;
+}
+
+.footer-vn-ninja-van-png {
+    width: 50px;
+    height: 20px;
+    background-size: 1236.6666666666667% 826.9230769230769%;
+    background-position: 57.33137829912023% 31.21693121693122%;
+}
+
+.footer-vn-best-express-png {
+    width: 39px;
+    height: 22px;
+    background-size: 797.8494623655914% 413.46153846153845%;
+    background-position: 13.86748844375963% 6.134969325153374%;
+}
+
+.footer-vn-vn_registered_red-png {
+    width: 120px;
+    height: 45px;
+    background-size: 618.3333333333334% 477.77777777777777%;
+    background-position: 34.08360128617363% 65.29411764705883%;
+}
+
+.footer-vn-vn_no_fake_item-png {
+    width: 48px;
+    height: 48px;
+    background-size: 1545.8333333333333% 447.9166666666667%;
+    background-position: 100% 27.54491017964072%;
+}
