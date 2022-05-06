@@ -25,7 +25,7 @@
         <header class="header">
             <div class="grid wide">
                 <!-- Header navbar -->
-                <nav class="header__navbar">
+                <nav class="header__navbar hide-on-mobile-tablet">
                         <ul class="header__navbar-list">
                             <li class="header__navbar-item header__navbar-item--separate">Kênh Người Bán</li>
                             <li class="header__navbar-item header__navbar-item--separate">Trở thành Người bán Shopee</li>
@@ -152,8 +152,11 @@
                 </nav>
                 
                 <!-- Header search -->
-                <div class="header-with-search">
-                    <div class="header__logo">
+                <div class="header-with-search row">
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <div class="header__logo hide-on-tablet">
                         <a href="#" class="header__logo-link">
                             <svg viewBox="0 0 192 65" class="header__logo-img">
                                 <g fill-rule="evenodd">
@@ -165,72 +168,76 @@
                         </a>
                     </div>
 
+                    <input type="checkbox" name="" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
                     <div class="header__search-content">
-                    <div class="header__search">
-                        <div class="header__search-iput-wrap">
-                            <input type="text" class="header__search-input" placeholder="Tìm trong Shop này">
-                            <!-- Search history -->
-                            <div class="header__search-history">
-                                <p class="header__search-history-heading">Lịch sử tìm kiếm</p>
-                                <ul class="header__search-history-list">
-                                    <li class="header__search-history-item">
-                                        <a href="#">Kem dưỡng da</a>
-                                    </li>
-                                    <li class="header__search-history-item">
-                                        <a href="#">Kem dưỡng ẩm</a>
-                                    </li>
-                                </ul>
+                        <div class="header__search">
+                            <div class="header__search-iput-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm trong Shop này">
+                                <!-- Search history -->
+                                <div class="header__search-history">
+                                    <p class="header__search-history-heading">Lịch sử tìm kiếm</p>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="#">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="#">Kem dưỡng ẩm</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">
+                                    Trong Shop này 
+                                    <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+                                    
+                                    <ul class="header__search-option">
+                                        <li class="header__search-option-item header__search-option-item--active">
+                                            <span>Trong Shop này</span>
+                                            <i class="fa-solid fa-check"></i>
+                                        </li>
+                                        <li class="header__search-option-item">
+                                            <span>Trong Shopee</span>
+                                            <i class="fa-solid fa-check"></i>
+                                        </li>
+                                    </ul>
+                                </span>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
                         </div>
-                        <div class="header__search-select">
-                            <span class="header__search-select-label">
-                                Trong Shop này 
-                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
-                                
-                                <ul class="header__search-option">
-                                    <li class="header__search-option-item header__search-option-item--active">
-                                        <span>Trong Shop này</span>
-                                        <i class="fa-solid fa-check"></i>
-                                    </li>
-                                    <li class="header__search-option-item">
-                                        <span>Trong Shopee</span>
-                                        <i class="fa-solid fa-check"></i>
-                                    </li>
-                                </ul>
-                            </span>
+                        <div class="header__search-navbar hide-on-mobile-tablet">
+                            <ul class="header__search-navbar-list hide-on-mobile-tablet">
+                                <li class="header__search-navbar-item">
+                                    <a href="#">Sữa rửa mặt</a>
+                                </li>
+                                <li class="header__search-navbar-item">
+                                    <a href="#">Kem chống nắng</a>
+                                </li>
+                                <li class="header__search-navbar-item">
+                                    <a href="#">Kem dưỡng ẩm</a>
+                                </li>
+                                <li class="header__search-navbar-item">
+                                    <a href="#">Toner</a>
+                                </li>
+                                <li class="header__search-navbar-item">
+                                    <a href="#">Nước tẩy trang</a>
+                                </li>
+                                <li class="header__search-navbar-item">
+                                    <a href="#">Bông tẩy trang</a>
+                                </li>
+                            </ul>
                         </div>
-                        <button class="header__search-btn">
-                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
-                        </button>
                     </div>
-                    <div class="header__search-navbar">
-                        <ul class="header__search-navbar-list">
-                            <li class="header__search-navbar-item">
-                                <a href="#">Sữa rửa mặt</a>
-                            </li>
-                            <li class="header__search-navbar-item">
-                                <a href="#">Kem chống nắng</a>
-                            </li>
-                            <li class="header__search-navbar-item">
-                                <a href="#">Kem dưỡng ẩm</a>
-                            </li>
-                            <li class="header__search-navbar-item">
-                                <a href="#">Toner</a>
-                            </li>
-                            <li class="header__search-navbar-item">
-                                <a href="#">Nước tẩy trang</a>
-                            </li>
-                            <li class="header__search-navbar-item">
-                                <a href="#">Bông tẩy trang</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
                     <!-- Card -->
                     <div class="header__cart">
                         <div class="header__cart-wrap">
-                            <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            <label for="mobile-cart-checkbox" class="header__mobile-cart">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                            </label>
                             <span class="header__cart-notice">6</span>
 
                             <!-- No cart: header__cart-list--no-card -->
@@ -348,16 +355,32 @@
                                     <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
                                 </footer>
                             </div>
+
+                            <input type="checkbox" name="" hidden id="mobile-cart-checkbox" class="header__cart-checkbox">
                         </div>
                     </div>
                 </div>
             </div>
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Phổ biến</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="#" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="#" class="header__sort-link">Giá</a>
+                </li>
+            </ul>
         </header>
 
         <div class="container">
             <div class="grid wide">
-                <div class="grid__row container-content">
-                    <div class="grid__column-2">
+                <div class="row sm-gutter container-content">
+                    <div class="col l-2 m-0 c-0">
                         <nav class="category">
                             <h3 class="category__heading">
                                 <i class="category__heading-icon fa-solid fa-list-ul"></i>
@@ -380,8 +403,8 @@
                         </nav>
                     </div>
 
-                    <div class="grid__column-10">
-                        <div class="home-filter">
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             
                             <div class="home-filter__nav">
@@ -421,10 +444,57 @@
                             
                         </div>
 
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link">
+                                        <span>
+                                            Sữa rửa mặt
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link">
+                                        <span>
+                                            Nước hoa hồng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link">
+                                        <span>
+                                            Tinh chất Serum, Ampoule, Essence
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link">
+                                        <span>
+                                            Sữa rửa mặt
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link">
+                                        <span>
+                                            Nước hoa hồng
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="#" class="mobile-category__link">
+                                        <span>
+                                            Tinh chất Serum, Ampoule, Essence
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                 <!-- Product item -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -460,7 +530,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -496,7 +566,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -532,7 +602,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -568,7 +638,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -604,7 +674,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -640,7 +710,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -676,7 +746,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -712,7 +782,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -748,7 +818,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -784,7 +854,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -820,7 +890,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -856,7 +926,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -892,7 +962,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -928,7 +998,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
                                         <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
@@ -1009,8 +1079,8 @@
             </div>
             <div class="footer-container">
                 <div class="grid wide">
-                    <div class="grid__row footer-content">
-                        <div class="grid__column-2-4">
+                    <div class="row footer-content">
+                        <div class="col l-2-4 m-4 c-6">
                             <h3 class="footer__heading">CHĂM SÓC KHÁCH HÀNG</h3>
                             <ul class="footer-list">
                                 <li class="footer-item">
@@ -1048,7 +1118,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-4 c-6">
                             <h3 class="footer__heading">VỀ SHOPEE</h3>
                             <ul class="footer-list">
                                 <li class="footer-item">
@@ -1080,7 +1150,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4 footer-col-3">
+                        <div class="col l-2-4 m-4 c-6 hide-on-mobile">
                             <h3 class="footer__heading">THANH TOÁN</h3>
                             <ul class="footer__pay-list">
                                 <li class="footer__pay-item">
@@ -1136,7 +1206,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-4 c-12">
                             <h3 class="footer__heading">THEO DÕI CHÚNG TÔI TRÊN</h3>
                             <ul class="footer-list">
                                 <li class="footer-item">
@@ -1159,7 +1229,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-8 c-12">
                             <h3 class="footer__heading">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
                             <div class="footer__dowload">
                                 <a href="https://shopee.vn/web" target="blank" class="footer__dowload-qr">
@@ -1179,11 +1249,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid__row footer-source">
-                        <div class="grid__column-3 footer__permission">
+                    <div class="row footer-source">
+                        <div class="col l-3 hide-on-mobile-tablet footer__permission">
                             <span class="footer__permission-text">© 2022 Shopee. Tất cả các quyền được bảo lưu.</span>
                         </div>
-                        <div class="grid__column-9 footer__country">
+                        <div class="col l-9 hide-on-mobile-tablet footer__country">
                             <ul class="footer__country-list">
                                 <span class="footer__country-text">Quốc gia & Khu vực:</span>
                                 <li class="footer__country-item">
@@ -1242,40 +1312,40 @@
 
             <div class="footer-bottom">
                 <div class="grid wide">
-                    <div class="grid__row footer__policy">
-                        <ul class="footer__policy-list">
-                            <li class="footer__policy-item">
+                    <div class="footer__policy">
+                        <ul class="row footer__policy-list">
+                            <li class="col l-3 c-6 footer__policy-item">
                                 <a href="#" class="footer__policy-link">CHÍNH SÁCH BẢO MẬT</a>
                             </li>
-                            <li class="footer__policy-item">
+                            <li class="col l-3 c-6 footer__policy-item">
                                 <a href="#" class="footer__policy-link">QUY CHẾ HOẠT ĐỘNG</a>
                             </li>
-                            <li class="footer__policy-item">
+                            <li class="col l-3 c-12 footer__policy-item">
                                 <a href="#" class="footer__policy-link">CHÍNH SÁCH VẬN CHUYỂN</a>
                             </li>
-                            <li class="footer__policy-item">
+                            <li class="col l-3 c-12 footer__policy-item">
                                 <a href="#" class="footer__policy-link">CHÍNH SÁCH TRẢ HÀNG VÀ HOÀN TIỀN</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__row footer__checked">
+                    <div class="row footer__checked">
                         <div class="footer__checked-logos">
                             <a href="#" class="footer__checked-logo">
                                 <div class="footer-vn-background footer-vn-vn_registered_red-png"></div>
                             </a>
-                            <a href="#" class="footer__checked-logo">
+                            <a href="#" class="footer__checked-logo hide-on-mobile">
                                 <div class="footer-vn-background footer-vn-vn_registered_red-png"></div>
                             </a>
-                            <a href="#" class="footer__checked-logo">
+                            <a href="#" class="footer__checked-logo hide-on-mobile">
                                 <div class="footer-vn-background footer-vn-vn_no_fake_item-png"></div>
                             </a>
                         </div>
                     </div>
                     <span class="footer__company">Công ty TNHH Shopee</span>
-                    <div class="grid__row footer__info">
-                        <p class="footer__info-text">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
-                        <p class="footer__info-text">Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
-                        <p class="footer__info-text">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
+                    <div class="row footer__info">
+                        <p class="footer__info-text hide-on-mobile">Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn</p>
+                        <p class="footer__info-text hide-on-mobile">Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)</p>
+                        <p class="footer__info-text hide-on-mobile">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p>
                         <p class="footer__info-text">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>                        
                     </div>
                 </div>
