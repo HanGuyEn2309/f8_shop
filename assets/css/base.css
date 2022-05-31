@@ -99,8 +99,12 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    display: flex;
+    display: none;
     animation: fadeIn linear 0.1s;
+}
+
+.modal.js-modal.open {
+    display: flex;
 }
 
 .modal__overlay {
@@ -155,6 +159,17 @@ html {
 .btn.btn--width-icon {
     /* flex: 1; */
     width: 220px;
+}
+
+.btn.btn--notify {
+    flex: 1;
+    background-color: #fbfbfb;
+    border: none;
+}
+
+.btn.btn--notify:hover {
+    background-color: #f7f7f7;
+    color: var(--primary-color);
 }
 
 /* Selection */

@@ -68,42 +68,54 @@
                                 </a>
 
                                 <!-- Notification -->
-                                <div class="header__notify">
-                                    <header class="header__notify-header">
-                                        <h3>Thông báo mới nhận</h3>
-                                    </header>
-                                    <ul class="header__notify-list">
-                                        <li class="header__notify-item header__notify-item--viewd">
-                                            <a href="" class="header__notify-link">
-                                                <img src="./assets/img/notification/deal1k.jpg" alt="" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <span class="header__notify-name">LÊN ĐỒ SÀNH ĐIỆU DEAL CHỈ 1K</span>
-                                                    <span class="header__notify-description">Vạn deal 1K mở bán cả ngày. Style nào cũng có - quẹo lựa chốt đơn!</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="header__notify-item header__notify-item--viewd">
-                                            <a href="" class="header__notify-link">
-                                                <img src="./assets/img/notification/deal_hot.jpg" alt="" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <span class="header__notify-name">SĂN NGÀY DEAL HOT ĐẾN 50%</span>
-                                                    <span class="header__notify-description">Cực nhiều Deal hot giảm đến 50%. Kèm freeship đến 70k. Thêm voucher hoàn 50k xu. Quá hời rồi, chốt đơn thôi!</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="header__notify-item header__notify-item--viewd">
-                                            <a href="" class="header__notify-link">
-                                                <img src="./assets/img/notification/hoanxu_extra.jpg" alt="" class="header__notify-img">
-                                                <div class="header__notify-info">
-                                                    <span class="header__notify-name">VOUCHER HOÀN XU EXTRA</span>
-                                                    <span class="header__notify-description">Đã có sẵn trong kho voucher của bạn. Số lượng có hạn - dùng ngay bạn nhé!</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                    <footer class="header__notify-footer">
-                                        <a href="" class="header__notify-footer-btn">Xem tất cả</a>
-                                    </footer>
+                                <div class="header__notify js-header__notify">
+                                    <div class="header__notify--no-user js-header__notify--no-user">
+                                        <div class="header__notify--no-user-content">
+                                            <img src="./assets/img/no_notifi.png" alt="" class="header__notify--no-user-img">
+                                            <p class="header__notify--no-user-msg">Đăng nhập để xem thông báo</p>
+                                        </div>
+                                        <div class="header__notify--no-user-footer">
+                                            <button class="btn btn--notify js-auth-form__login-btn">Đăng ký</button>
+                                            <button class="btn btn--notify js-auth-form__register-btn">Đăng nhập</button>
+                                        </div>
+                                    </div>
+                                    <div class="header__notify--has-user js-header__notify--has-user">
+                                        <header class="header__notify-header">
+                                            <h3>Thông báo mới nhận</h3>
+                                        </header>
+                                        <ul class="header__notify-list">
+                                            <li class="header__notify-item js-header__notify-item">
+                                                <a href="#" class="header__notify-link">
+                                                    <img src="./assets/img/notification/deal1k.jpg" alt="" class="header__notify-img">
+                                                    <div class="header__notify-info">
+                                                        <span class="header__notify-name">LÊN ĐỒ SÀNH ĐIỆU DEAL CHỈ 1K</span>
+                                                        <span class="header__notify-description">Vạn deal 1K mở bán cả ngày. Style nào cũng có - quẹo lựa chốt đơn!</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="header__notify-item js-header__notify-item">
+                                                <a href="#" class="header__notify-link">
+                                                    <img src="./assets/img/notification/deal_hot.jpg" alt="" class="header__notify-img">
+                                                    <div class="header__notify-info">
+                                                        <span class="header__notify-name">SĂN NGÀY DEAL HOT ĐẾN 50%</span>
+                                                        <span class="header__notify-description">Cực nhiều Deal hot giảm đến 50%. Kèm freeship đến 70k. Thêm voucher hoàn 50k xu. Quá hời rồi, chốt đơn thôi!</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="header__notify-item js-header__notify-item">
+                                                <a href="#" class="header__notify-link">
+                                                    <img src="./assets/img/notification/hoanxu_extra.jpg" alt="" class="header__notify-img">
+                                                    <div class="header__notify-info">
+                                                        <span class="header__notify-name">VOUCHER HOÀN XU EXTRA</span>
+                                                        <span class="header__notify-description">Đã có sẵn trong kho voucher của bạn. Số lượng có hạn - dùng ngay bạn nhé!</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <footer class="header__notify-footer">
+                                            <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                        </footer>
+                                    </div>
                                 </div>
 
                             </li>
@@ -126,10 +138,10 @@
                                     <div class="header__language-item">English</div>
                                 </div>
                             </li>
-                            <!-- <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">Đăng Ký</li>
-                            <li class="header__navbar-item header__navbar-item--strong">Đăng Nhập</li> -->
+                            <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate js-auth-form__register-btn">Đăng Ký</li>
+                            <li class="header__navbar-item header__navbar-item--strong js-auth-form__login-btn">Đăng Nhập</li>
 
-                            <li class="header__navbar-item header__navbar-user">
+                            <li class="header__navbar-item header__navbar-item--hide header__navbar-user js-header__navbar-user">
                                 <img src="./assets/img/pain.jpg" alt="" class="header__navbar-user-img">
                                 <span class="header__navbar-user-name">Nguyễn Việt Hà</span>
 
@@ -143,7 +155,7 @@
                                     <li class="header__navbar-user-item">
                                         <a href="#">Đơn mua</a>
                                     </li>
-                                    <li class="header__navbar-user-item header__navbar-user--separate">
+                                    <li class="header__navbar-user-item header__navbar-user--separate js-auth-form__logout-btn">
                                         <a href="#">Đăng xuất</a>
                                     </li>
                                 </ul>
@@ -188,21 +200,22 @@
                                 </div>
                             </div>
                             <div class="header__search-select">
-                                <span class="header__search-select-label">
-                                    Trong Shop này 
-                                    <i class="header__search-select-icon fa-solid fa-angle-down"></i>
-                                    
-                                    <ul class="header__search-option">
-                                        <li class="header__search-option-item header__search-option-item--active">
-                                            <span>Trong Shop này</span>
-                                            <i class="fa-solid fa-check"></i>
-                                        </li>
-                                        <li class="header__search-option-item">
-                                            <span>Trong Shopee</span>
-                                            <i class="fa-solid fa-check"></i>
-                                        </li>
-                                    </ul>
+                                <span class="header__search-select-label js-header__search-select-label">
+                                    Trong Shop này
                                 </span>
+                                <div id="toast"></div>
+                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+                                
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item in-shop header__search-option-item--active">
+                                        <span>Trong Shop này</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Trong Shopee</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
                             </div>
                             <button class="header__search-btn">
                                 <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
@@ -238,16 +251,16 @@
                             <label for="mobile-cart-checkbox" class="header__mobile-cart">
                                 <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
                             </label>
-                            <span class="header__cart-notice">6</span>
+                            <span class="header__cart-notice header__cart-notice--hide js-header__cart-notice">6</span>
 
                             <!-- No cart: header__cart-list--no-card -->
-                            <div class="header__cart-list">
+                            <div class="header__cart-list header__cart-list--no-cart js-header__cart--no-cart">
                                 <img src="./assets/img/no_cart.png" alt="" class="header__cart--no-cart-img">
                                 <p class="header__cart--no-cart-msg">Chưa có sản phẩm</p>
-                                
+                            </div>
+                            <div class="header__cart-list js-header__cart--has-cart">
                                 <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
                                 <ul class="header__cart-list-item">
-                                    <!-- Cart-item -->
                                     <li class="header__cart-item">
                                         <img src="./assets/img/cart_img/cart_img.jpg" alt="" class="header__cart-item-img">
                                         <div class="header__cart-item-info">
@@ -361,18 +374,18 @@
                     </div>
                 </div>
             </div>
-            <ul class="header__sort-bar">
-                <li class="header__sort-item">
-                    <a href="#" class="header__sort-link">Phổ biến</a>
+            <ul class="header__sort-bar js-header__sort-bar">
+                <li class="header__sort-item js-header__sort-item">
+                    <a href="#" class="header__sort-link js-header__sort-link">Phổ biến</a>
                 </li>
-                <li class="header__sort-item header__sort-item--active">
-                    <a href="#" class="header__sort-link">Mới nhất</a>
+                <li class="header__sort-item js-header__sort-item">
+                    <a href="#" class="header__sort-link header__sort-link--active js-header__sort-link">Mới nhất</a>
                 </li>
-                <li class="header__sort-item">
-                    <a href="#" class="header__sort-link">Bán chạy</a>
+                <li class="header__sort-item js-header__sort-item">
+                    <a href="#" class="header__sort-link js-header__sort-link">Bán chạy</a>
                 </li>
-                <li class="header__sort-item">
-                    <a href="#" class="header__sort-link">Giá</a>
+                <li class="header__sort-item js-header__sort-item">
+                    <a href="#" class="header__sort-link js-header__sort-link">Giá</a>
                 </li>
             </ul>
         </header>
@@ -408,19 +421,21 @@
                             <span class="home-filter__label">Sắp xếp theo</span>
                             
                             <div class="home-filter__nav">
-                                <button class="home-filter__nav-btn btn">Phổ biến</button>
-                                <button class="home-filter__nav-btn btn btn--primary">Mới nhất</button>
-                                <button class="home-filter__nav-btn btn">Bán chạy</button>
+                                <button class="home-filter__nav-btn btn js-home-filter__nav-btn">Phổ biến</button>
+                                <button class="home-filter__nav-btn btn btn--primary js-home-filter__nav-btn">Mới nhất</button>
+                                <button class="home-filter__nav-btn btn js-home-filter__nav-btn">Bán chạy</button>
 
                                 <div class="select-input">
                                     <span class="select-input__label">Giá</span>
-                                    <i class="select-input__icon fa-solid fa-angle-down"></i>
+                                    <div id="toast-price"></div>
+                                    <i class="select-input__icon fa-solid fa-angle-down js-select-input__icon-down"></i>
+                                    <i class="select-input__icon fa-solid fa-angle-up js-select-input__icon-up"></i>
                                     <ul class="select-input__list">
                                         <li class="select-input__item">
-                                            <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                            <a href="#" class="select-input__link">Giá: Thấp đến cao</a>
                                         </li>
                                         <li class="select-input__item">
-                                            <a href="" class="select-input__link">Giá: Cao đến thấp</a>
+                                            <a href="#" class="select-input__link">Giá: Cao đến thấp</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1355,17 +1370,17 @@
 
     <!-- Modal -->
     
-    <!-- <div class="modal">
+    <div class="modal js-modal">
         <div class="modal__overlay"></div>
-        <div class="modal__body"> -->
+        <div class="modal__body js-modal__body">
 
             <!-- Register form -->
-            <!-- <div class="auth-form">
+            <div class="auth-form js-auth-form__register">
                 
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                        <span class="auth-form__switch-btn js-auth-form__switch-btn">Đăng nhập</span>
                     </div>
 
                     <div class="auth-form__form">
@@ -1392,7 +1407,7 @@
                     </div>
                     
                     <div class="auth-form__control">
-                        <button class="btn btn--back auth-form__control-back">TRỞ LẠI</button>
+                        <button class="btn btn--back auth-form__control-back js-auth-form__close-btn">TRỞ LẠI</button>
                         <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
                 </div>
@@ -1408,15 +1423,15 @@
                     </a>
                 </div>
 
-            </div> -->
+            </div>
 
             <!-- Login form -->
-            <!-- <div class="auth-form">
+            <div class="auth-form js-auth-form__login">
                 
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký</span>
+                        <span class="auth-form__switch-btn js-auth-form__switch-btn">Đăng ký</span>
                     </div>
 
                     <div class="auth-form__form">
@@ -1438,8 +1453,8 @@
 
                     
                     <div class="auth-form__control">
-                        <button class="btn btn--back auth-form__control-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        <button class="btn btn--back auth-form__control-back js-auth-form__close-btn">TRỞ LẠI</button>
+                        <button class="btn btn--primary js-auth-form__account-btn">ĐĂNG NHẬP</button>
                     </div>
                 </div>
                 
@@ -1456,8 +1471,9 @@
 
             </div>
         </div>
-    </div> -->
+    </div>
 
+    <script src="./assets/js/app.js"></script>
 
 </body>
 </html>
