@@ -201,4 +201,4 @@ for(const productLike of productLikes){
             this.classList.add('home-product-item__like--liked')
         }
     })
-}        
+}
