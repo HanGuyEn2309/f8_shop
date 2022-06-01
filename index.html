@@ -75,8 +75,8 @@
                                             <p class="header__notify--no-user-msg">Đăng nhập để xem thông báo</p>
                                         </div>
                                         <div class="header__notify--no-user-footer">
-                                            <button class="btn btn--notify js-auth-form__login-btn">Đăng ký</button>
-                                            <button class="btn btn--notify js-auth-form__register-btn">Đăng nhập</button>
+                                            <button class="btn btn--notify js-auth-form__register-btn">Đăng ký</button>
+                                            <button class="btn btn--notify js-auth-form__login-btn">Đăng nhập</button>
                                         </div>
                                     </div>
                                     <div class="header__notify--has-user js-header__notify--has-user">
@@ -429,7 +429,7 @@
                                     <span class="select-input__label">Giá</span>
                                     <div id="toast-price"></div>
                                     <i class="select-input__icon fa-solid fa-angle-down js-select-input__icon-down"></i>
-                                    <i class="select-input__icon fa-solid fa-angle-up js-select-input__icon-up"></i>
+                                    <!-- <i class="select-input__icon fa-solid fa-angle-up js-select-input__icon-up"></i> -->
                                     <ul class="select-input__list">
                                         <li class="select-input__item">
                                             <a href="#" class="select-input__link">Giá: Thấp đến cao</a>
@@ -518,7 +518,79 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked js-item__like--likedjs-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart js-item__like-icon-empty"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart js-item__like-icon-fill"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 4,8k</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">CORSX</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
+                                        <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">150.000đ</span>
+                                            <span class="home-product-item__price-curent">85.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked js-item__like--liked">
+                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart js-item__like-icon-empty"></i>
+                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart js-item__like-icon-fill"></i>
+                                            </span>
+                                            <div class="home-product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 4,8k</div>
+                                        </div>
+                                        <div class="home-product-item__origin">
+                                            <span class="home-product-item__brand">CORSX</span>
+                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
+                                        </div>
+                                        <div class="home-product-item__favourite">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="home-product-item__sale-off">
+                                            <span class="home-product-item__sale-off-percent">43%</span>
+                                            <span class="home-product-item__sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col l-2-4 m-4 c-6">
+                                    <a class="home-product-item" href="#">
+                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
+                                        <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">150.000đ</span>
+                                            <span class="home-product-item__price-curent">85.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like home-product-item__like--liked js-item__like--liked">
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -554,7 +626,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked js-item__like--liked">
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -590,7 +662,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -626,7 +698,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -662,7 +734,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -698,7 +770,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -734,7 +806,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -770,7 +842,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -806,7 +878,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -842,7 +914,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -878,7 +950,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -914,7 +986,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>
@@ -950,79 +1022,7 @@
                                             <span class="home-product-item__price-curent">85.000đ</span>
                                         </div>
                                         <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="home-product-item__sold">Đã bán 4,8k</div>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">CORSX</span>
-                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">43%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
-                                        <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
-                                        <div class="home-product-item__price">
-                                            <span class="home-product-item__price-old">150.000đ</span>
-                                            <span class="home-product-item__price-curent">85.000đ</span>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
-                                                <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
-                                                <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="home-product-item__sold">Đã bán 4,8k</div>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">CORSX</span>
-                                            <span class="home-product-item__origin-name">Hàn Quốc</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fa-solid fa-check"></i>
-                                            <span>Yêu thích</span>
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__sale-off-percent">43%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a class="home-product-item" href="#">
-                                        <div class="home-product-item__img" style="background-image: url(https://cf.shopee.vn/file/f55a9329974974f16ee0ea777c85f1cb_tn);"></div>
-                                        <h4 class="home-product-item__name">Sữa rửa mặt dạng gel COSRX 50ml chiết xuất trà xanh độ pH thấp cho buổi sáng</h4>
-                                        <div class="home-product-item__price">
-                                            <span class="home-product-item__price-old">150.000đ</span>
-                                            <span class="home-product-item__price-curent">85.000đ</span>
-                                        </div>
-                                        <div class="home-product-item__action">
-                                            <span class="home-product-item__like home-product-item__like--liked">
+                                            <span class="home-product-item__like home-product-item__like--liked"js-item__like--liked>
                                                 <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
                                                 <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
                                             </span>

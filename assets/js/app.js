@@ -177,15 +177,28 @@ headerSortLinks.forEach(headerSortLink => {
 })
 
 // Giá
-function toast({title =''}) {
-    const main = document.getElementById('toast-price');
-    if(main) {
-        const toast = document.createElement('div');
+// function toast({title =''}) {
+//     const main = document.getElementById('toast-price');
+//     if(main) {
+//         const toast = document.createElement('div');
 
-        toast.innerHTML = `
-            <span class="select-input__label">${title}</span>
-        `;
+//         toast.innerHTML = `
+//             <span class="select-input__label">${title}</span>
+//         `;
         
-        main.appendChild(toast);
-    }
-}
+//         main.appendChild(toast);
+//     }
+// }
+
+// Thả tym
+const productLikes= document.querySelectorAll('.js-item__like--liked')
+for(const productLike of productLikes){
+    productLike.addEventListener('click', function(){
+        isLiked = this.classList.contains('home-product-item__like--liked')
+        if (isLiked){
+            this.classList.remove('home-product-item__like--liked')
+        } else {
+            this.classList.add('home-product-item__like--liked')
+        }
+    })
+}        

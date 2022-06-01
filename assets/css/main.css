@@ -1222,6 +1222,7 @@ i.home-product-item__like-icon-fill {
 
 .home-product-item__like--liked i.home-product-item__like-icon-empty {
     display: none;
+    /* display: inline-block; */
 }
 
 .home-product-item__rating {
